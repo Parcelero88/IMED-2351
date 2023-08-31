@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <title>M1 Assignment</title>
 </head>
+
 <body>
 <h1>M1 Assigment</h1>
 <h2>Ask a Question in the Console Log</h2>
 <p>I think it worked!</p>
 <script>
-const myObj = {firsname:"?", lastname:"?"};
-console.log(myObj);
-</script>
-<p>You visited my page at:</p>
-<p id="demo"></p>
-<script>
 const d = new Date();
 document.getElementById("demo").innerHTML = d;
 </script>
+<script>
+const myObj = {firsname:"?", lastname:"?"};
+console.log(myObj);
+</script>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
 </body>
 </html>
