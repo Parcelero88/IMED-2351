@@ -1,1 +1,16 @@
-V
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Variables</title>
+</head>
+
+<body>
+<h1>Trying Variables in JavaScript</h1>
+<script>
+const myObj = {Wondering if this is correct};
+console.log(myObj);
+</script>
+
+</body>
+</html>
