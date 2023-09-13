@@ -7,10 +7,20 @@
 
 <body>
 <h1>Trying Variables in JavaScript</h1>
+<p>Variable #1:</p>
+<p id="demo1"></p>
 <script>
-const myObj = {Wonderingifthisiscorrect};
-console.log(myObj);
+let dogName = "Kylo"; //Kylo is our new puppy! This is a Global Variable
+document.getElementById("demo1").innerHTML = dogName;
 </script>
-
+<p>Variable #2:</p>
+<p id="demo2">Black</p>
+<script>
+myFunction();
+function myFunction() {
+  let dogColor = "Black"; //Kylo is a black Lab mix. This is a Block Variable
+  document.getElementById("demo2").innerHTML = typeof dogColor + " " + dogColor;
+}
+</script>
 </body>
 </html>
