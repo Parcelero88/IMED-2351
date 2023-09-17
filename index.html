@@ -1,26 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>JavaScript Variables</title>
-</head>
-
 <body>
-<h1>Trying Variables in JavaScript</h1>
-<p>Variable #1:</p>
+<h1>JavaScript Functions</h1>
+
+<p>1: Create at least one function:</p>
 <p id="demo1"></p>
+<p>2: Pass Parameters in:</p>
+<p id="demo2"></p>
+<p>3: Pass Parameters out:</p>
+<p id="demo3"></p>
+<p>4: Invoke your functions. Everything works!</p>
+<p id="demo4"></p>
+<p>5: Object with Property. Create an object with multiple properties:</p>
+<p id="demo5"></p>
+<p>6: Event:</p>
+<p id="demo6"></p>
+<p>7: Method:</p>
+<p id="demo7"></p>
+
 <script>
-let dogName = "Kylo"; //Kylo is our new puppy! This is a Global Variable
-document.getElementById("demo1").innerHTML = dogName;
+function myFunction(p1, p2)
+{return p1*p2;}
+let result=myFunction(4, 3);
+document.getElementById("demo1").innerHTML = result;
 </script>
-<p>Variable #2:</p>
-<p id="demo2">Black</p>
-<script>
-myFunction();
-function myFunction() {
-  let dogColor = "Black"; //Kylo is a black Lab mix. This is a Block Variable
-  document.getElementById("demo2").innerHTML = typeof dogColor + " " + dogColor;
-}
-</script>
+
 </body>
 </html>
