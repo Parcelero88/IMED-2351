@@ -5,24 +5,37 @@
 
 <p>1: Create at least one function:</p>
 <p id="demo1"></p>
+	
 <p>2: Pass Parameters in:</p>
 <p id="demo2"></p>
+	
 <p>3: Pass Parameters out:</p>
 <p id="demo3"></p>
+
 <p>4: Invoke your functions. Everything works!</p>
 <p id="demo4"></p>
+	
 <p>5: Object with Property. Create an object with multiple properties:</p>
 <p id="demo5"></p>
+
 <p>6: Event:</p>
 <p id="demo6"></p>
+	
 <p>7: Method:</p>
 <p id="demo7"></p>
 
 <script>
-function myFunction(p1, p2)
-{return p1*p2;}
-let result=myFunction(4, 2); //My favorite number
+function myFunction(p1, p2) {
+ return p1 * p2;
+}
+let result = myFunction(4, 2);
 document.getElementById("demo1").innerHTML = result;
+	
+// Object:
+const puppy = {firstName:"Kylo", lastName:"Ren", age:"3"; color:"black"};
+
+document.getElementById("demo5").innerHTML =
+puppy.firstName + " is " + puppy.age + " months old " + "and his coat are " + puppy.color + ".";
 </script>
 
 </body>
