@@ -1,4 +1,4 @@
-</html><!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -48,20 +48,31 @@ div.sticky {
     <a href="index.html">M4</a>
   </div>
 </div>
-<h1>Module 6-B:</h1>
-<h2>Javascript Arrays</h2>
-
-<p id="demo1"></p>
+<h1>JavaScript Arrays</h1>
+<h2>This is an array of the cities I have lived in over the last 30 years:</h2>
+<p id="demo"></p>
 
 <script>
-let person = {
-  firstName : "Hector",
-  lastName  : "Rivera",
-  age     : 48,
-  eyeColor  : "dark brown"
-};
-
-document.getElementById("demo1").innerHTML = "My name is " + person.firstName + " " + person.lastName + ", and I am " + person.age + " years old.";
+const city = [];
+city[0]= "Rio Piedras, PR";
+city[1]= " Frederick, MD";
+city[2]= " San Antonio, TX";
+city[3]= " Augusta, GA";
+city[4]= " Edgewood, MD";
+city[5]= " Baltimore, MD";
+city[6]= " Towson, MD";
+city[7]= " Edgewood, MD";
+city[8]= " Kaiserslautern, Germany (2 addresses)";
+city[9]= " El Paso, TX (2 addresses)";
+city[10]= " Pyeongtaek, South Korea";
+city[11]= " Alexandria, VA";
+city[12]= " Fort Hood, TX";
+city[13]= " Kuwait City, Kuwait";
+city[14]= " Fort Hood, TX";
+city[15]= " Baghdad, Iraq";
+city[16]= " Fort Hood, TX";
+city[17]= " San Antonio, TX (2 addresses)";
+document.getElementById("demo").innerHTML = city;
 </script>
 
 </body>
