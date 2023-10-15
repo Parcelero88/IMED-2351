@@ -48,26 +48,19 @@ div.sticky {
     <a href="index.html">M4</a>
   </div>
 </div>
-<h1>Module 5:</h1>
-<h2>Loops and the DOM</h2>
+<h2>JavaScript While Loop</h2>
 
-<p>My Favorite cars are:</p>
-<p id="demo1"></p>
-<p>But my dream car is:</p>
-<p id="p1">
-Nissan GT-R
-</p>
-
-<input type="button" value="Hide text" 
-onclick="document.getElementById('p1').style.visibility='hidden'">
-<input type="button" value="Show text"
-onclick="document.getElementById('p1').style.visibility='visible'">
+<p id="demo"></p>
 
 <script>
-const cars = ["F-150 King Ranch", "GT-R", "Shelby Cobra", "Mustang Dark Horse"];
 let text = "";
-for (let i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
-};
-document.getElementById("demo1").innerHTML = text;
+let i = 101;
+while (i < 251) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
 </script>
+
+</body>
+</html>
