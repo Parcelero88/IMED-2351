@@ -1,14 +1,13 @@
 const game = () => {
   let pScore = 0;
   let cScore = 0;
-
-  //Start the Game
+//Start the Game
   const startGame = () => {
-    const playBtn = document.querySelector(".intro button");
-    const introScreen = document.querySelector(".intro");
-    const match = document.querySelector(".match");
+  const playBtn = document.querySelector(".intro button");
+  const introScreen = document.querySelector(".intro");
+  const match = document.querySelector(".match");
 
-    playBtn.addEventListener("click", () => {
+playBtn.addEventListener("click", () => {
       introScreen.classList.add("fadeOut");
       match.classList.add("fadeIn");
     });
