@@ -1,7 +1,8 @@
 const game = () => {
   let pScore = 0;
   let cScore = 0;
-//Start the Game
+
+//Start
   const startGame = () => {
   const playBtn = document.querySelector(".intro button");
   const introScreen = document.querySelector(".intro");
@@ -13,7 +14,7 @@ playBtn.addEventListener("click", () => {
     });
   };
   //Play Match
-  const playMatch = () => {
+    const playMatch = () => {
     const options = document.querySelectorAll(".options button");
     const playerHand = document.querySelector(".player-hand");
     const computerHand = document.querySelector(".computer-hand");
