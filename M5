@@ -2,7 +2,40 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Module 5: Loops and the DOM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Late Assignments</title>
+<style>
+.topnav {overflow: hidden;
+	background-color: #000000;
+	margin: auto;
+	position: sticky;
+	border-radius: 25px;
+	width: 550px;
+	float: right;}
+.topnav a {
+  float: right;
+  display: block;
+  color: Gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: SlateGray;
+  color: black;
+}
+.topnav a:hover:not(.active) {
+  background-color: SlateGray;
+  color: black;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-family: Arial;
+}
+</style>
 </head>
 
 <body>
