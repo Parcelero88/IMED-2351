@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Module 5: Loops and the DOM</title>
+</head>
+
+<body>
+<h1>Module 5:</h1>
+<h2>Loops and the DOM</h2>
+
+<p>My Favorite cars are:</p>
+<p id="demo1"></p>
+<p>But my dream car is:</p>
+<p id="p1">
+Nissan GT-R
+</p>
+
+<input type="button" value="Hide text" 
+onclick="document.getElementById('p1').style.visibility='hidden'">
+<input type="button" value="Show text"
+onclick="document.getElementById('p1').style.visibility='visible'">
+
+<script>
+const cars = ["F-150 King Ranch", "GT-R", "Shelby Cobra", "Mustang Dark Horse"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+};
+document.getElementById("demo1").innerHTML = text;
+</script>
+
+<h2>JavaScript While Loop - I Can't fuure out how to run two scripts on the same page... =o(</h2>
+
+<p id="demo2"></p>
+<script>
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo2").innerHTML = text;
+</script>
+</body>
+</html>
