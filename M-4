@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Late Assignments</title>
+<style>
+.topnav {overflow: hidden;
+	background-color: #000000;
+	margin: auto;
+	position: sticky;
+	border-radius: 25px;
+	width: 550px;
+	float: right;}
+.topnav a {
+  float: right;
+  display: block;
+  color: Gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: SlateGray;
+  color: black;
+}
+.topnav a:hover:not(.active) {
+  background-color: SlateGray;
+  color: black;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-family: Arial;
+}
+</style>
+</head>
+
+<body>
+<div class="sticky">
+  <div class="topnav">
+    <a href="M6-B.html">M6-B</a>
+    <a href="M6-A.html">M6-A</a>
+    <a href="M5-B.html">M5-B</a>
+    <a href="M5-A.html">M5-A</a>
+    <a href="index.html">M4</a>
+  </div>
+</div>
+<h1>Module 4:</h1>
+<h2>Strings and Conditionals</h2>
+
+<p id="demo1"></p>
+<p>This sentence has the following number of characters:</p>
+<p id="demo2"></p>
+
+<script>
+let text = "This sentence has the following number of characters";
+document.getElementById("demo2").innerHTML = text.length;
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 18) {
+  greeting = "Good afternoon";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo1").innerHTML = greeting;
+
+</script>
+</body>
+</html>
